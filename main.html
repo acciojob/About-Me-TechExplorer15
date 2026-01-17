@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Page</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f0f4ff, #e6ebff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #4b6cb7;
+            padding-bottom: 6px;
+            margin-top: 30px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile-header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #4b6cb7;
+            object-fit: cover;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #4b6cb7;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .info {
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
+            margin-bottom: 18px;
+        }
+
+        .skill-title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 14px;
+            border-radius: 10px;
+        }
+
+        .html { width: 90%; background: #e44d26; }
+        .css { width: 85%; background: #264de4; }
+        .js { width: 70%; background: #f0db4f; }
+        .python { width: 80%; background: #306998; }
+        .communication { width: 75%; background: #27ae60; }
+
+        .icons {
+            margin-top: 10px;
+            font-size: 26px;
+        }
+
+        .icons i {
+            margin-right: 10px;
+            color: #4b6cb7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile-header">
+        <!-- Replace src with your own photo -->
+        <img src="https://via.placeholder.com/140" alt="Profile Picture">
+
+        <div>
+            <h1>Personal Profile</h1>
+            <span class="badge"><i class="fa-solid fa-user-graduate"></i> Aspiring Professional</span>
+        </div>
+    </div>
+
+    <h2>Name</h2>
+    <p class="info">John Michael Doe</p>
+
+    <h2>Email</h2>
+    <p class="info"><i class="fa-solid fa-envelope"></i> john.doe@example.com</p>
+
+    <h2>Profile</h2>
+    <p class="info">
+        Front-End Web Developer / Software Engineering Intern
+    </p>
+
+    <h2>About me</h2>
+    <p class="info">
+        I am a motivated and detail-oriented web developer with a strong foundation in modern
+        web technologies. I enjoy transforming ideas into visually appealing and functional
+        digital experiences. My strengths include problem-solving, teamwork, and continuous
+        learning, while I actively work on improving performance optimization and advanced
+        JavaScript concepts.
+    </p>
+
+    <h2>Skills</h2>
+
+    <div class="icons">
+        <i class="fa-brands fa-html5" title="HTML5"></i>
+        <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+        <i class="fa-brands fa-js" title="JavaScript"></i>
+        <i class="fa-brands fa-python" title="Python"></i>
+        <i class="fa-solid fa-comments" title="Communication"></i>
+    </div>
+
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-title">
+                <span>HTML5</span><span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">
+                <span>CSS3</span><span>85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">
+                <span>JavaScript</span><span>70%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level js"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">
+                <span>Python</span><span>80%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level python"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">
+                <span>Communication</span><span>75%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level communication"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
 
